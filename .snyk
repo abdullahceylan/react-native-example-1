@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - react-native > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2019-05-18T03:51:22.764Z'
+    - babel-eslint > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2019-05-18T03:51:22.764Z'
+    - react-native > babel > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2019-05-18T03:51:22.764Z'
+    - react-native > yeoman-generator > html-wiring > cheerio > lodash:
+        patched: '2019-05-18T03:51:22.764Z'
