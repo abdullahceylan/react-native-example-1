@@ -4,7 +4,9 @@
   "description": "Example of using ReactNative to build simple iOS app, that fetches your current location and display Intstagram photos that where made near to you",
   "scripts": {
     "start": "NODE_ENV=debug HOT=1 ./node_modules/.bin/react-native-webpack-server start --hot",
-    "bundle": "NODE_ENV=production ./node_modules/.bin/react-native-webpack-server bundle"
+    "bundle": "NODE_ENV=production ./node_modules/.bin/react-native-webpack-server bundle",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Bart Gryszko <b@gryszko.com> (http://github.com/bgryszko)",
   "license": "MIT",
@@ -24,7 +26,8 @@
     "eslint": "^1.4.3",
     "moment": "^2.10.6",
     "react": "^0.13.3",
-    "react-native": "^0.11.0"
+    "react-native": "^0.11.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel": "^5.8.23",
@@ -41,5 +44,6 @@
     "react-native-webpack-server": "^0.5.1",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.11.0"
-  }
+  },
+  "snyk": true
 }
